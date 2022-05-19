@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공백 처리</title>    
+    <style>
+        li{list-style-type: none;}
+        .gnb li{display: inline;}
+        .gnb li a{
+            display: inline-block;
+            background: brown; color: #fff;
+            width: 100px; height: 35px; line-height: 35px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .gnb li a:hover{
+            text-decoration: none;
+            background: olivedrab;
+        }
+        .gnb .visible{
+            display: none;
+            /* visibility: hidden; */
+        }
+        img{opacity:1;}
+        img:hover{opacity: 0.3;}
+    </style>
+</head>
+<body>
+    <ul class="gnb">
+        <li><a href="#">Company</a></li>
+        <li class="visible"><a href="#">Product</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Commuinity</a></li>
+        <br><br>
+    </ul>
+    <img src="img/imfree.png" alt="자유 이미지 표현">
+</body>
+</html>

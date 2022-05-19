@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소 선택자</title>
+    <style>
+        p::first-letter{font-size: 150%; color: blue;}
+        p:first-child{color: blueviolet;}
+        p:nth-child(3){color: chocolate;}
+        p::before{content: "＠";}
+        .box::after{content: "♥"; color: red;}        
+    </style>
+</head>
+<body>  
+    <div class="box">
+        <p>COMPANY</p>
+        <p>PRODUCT</p>
+        <p>SERVICE</p>
+        <p>COMMUNITY</p>
+    </div>
+</body>
+</html>

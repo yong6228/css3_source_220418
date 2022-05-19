@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상 요소 선택자</title>
+    <style>
+        p{color: orangered;}
+        #one{color: blueviolet !important;}
+        p.two {color: cadetblue;}
+        p.two.third {color: blue;}
+        p:first-child{color: cornflowerblue;}
+    </style>
+</head>
+<body>  
+    <p id="one" class="two third" style="color: green;">CSS 우선 순위 확인하는 예시</p>
+    <P>css 추가적인 우선 순위 확인 문자 기재함</P>  
+    
+</body>
+</html>

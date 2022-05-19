@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 경로 이해</title>
+    <link rel="stylesheet" href="style/common.css">
+    <style>
+        /* @import는 CSS 안으로 다른 CSS 파일을 불러들일 경우 사용합니다.
+           중요 : CSS의 맨 윗줄에 기재합니다. */
+           @import url(style/atimport.css);
+           /* @import url(style/common.css); */
+           .styleTag{color: blue; font-weight: bold;}
+           </style>
+</head>
+<body>
+    <p style="color: blueviolet; font-weight: bold;">CSS 인라인 스타일 적용입니다.</p>
+    <p>이줄은 CSS 인라인 스타일 적용이 될까요?</p>
+    <p class="styleTag">이줄은 Style 태그를 적용했습니다.</p>
+    <p class="external">이줄은 외부 Style 파일 내용을 적용합니다.</p>
+    <p class="atimport">이줄은 외부 Style을 엣사인 import로 적용합니다.</p>
+
+</body>
+</html>
